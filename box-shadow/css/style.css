@@ -1,0 +1,101 @@
+:root {
+    --x: 10px;
+    --y: 10px;
+    --blur: 0px;
+    --spread: 0px;
+    --color: #000000;
+    --x2: -10px;
+    --y2: -10px;
+    --blur2: 0px;
+    --spread2: 0px;
+    --color2: #0075ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #ccc;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#box {
+    height: 220px;
+    width: 512px;
+    background-color: #eee;
+    margin: auto;
+    margin-top: 100px;
+    -webkit-transition: -webkit-box-shadow 200ms;
+    transition: -webkit-box-shadow 200ms;
+    -o-transition: box-shadow 200ms;
+    transition: box-shadow 200ms;
+    transition: box-shadow 200ms, -webkit-box-shadow 200ms;
+}
+
+#box.bs {
+    -webkit-box-shadow: var(--x) var(--y) var(--blur) var(--spread) var(--color);
+            box-shadow: var(--x) var(--y) var(--blur) var(--spread) var(--color);
+}
+
+#box.twobs {
+    -webkit-box-shadow: var(--x) var(--y) var(--blur) var(--spread) var(--color), var(--x2) var(--y2) var(--blur2) var(--spread2) var(--color2);
+            box-shadow: var(--x) var(--y) var(--blur) var(--spread) var(--color), var(--x2) var(--y2) var(--blur2) var(--spread2) var(--color2);
+}
+
+#controller {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.desc {
+    display: inline-block;
+    width: 64px;
+}
+
+#action-btn {
+    padding: 4px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+#additional {
+    height: 0;
+    overflow-y: hidden;
+    -webkit-transition: height 200ms;
+    -o-transition: height 200ms;
+    transition: height 200ms;
+}
+
+#additional.open {
+    height: 134px;
+}
+
+#output {
+    margin-top: 32px;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    #box {
+        height: 110px;
+        width: 256px;
+    }
+}
