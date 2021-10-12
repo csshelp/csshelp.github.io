@@ -36,13 +36,13 @@
                 <span class="desc">Y:</span> <input type="range" min="-512" max="512" value="10" id="y" onchange="change('y', value + 'px')"> <button onclick="reset('y', 10, 'px')">Reset</button><br>
                 <span class="desc">Blur:</span> <input type="range" min="0" max="255" value="0" id="blur" onchange="change('blur', value + 'px')"> <button onclick="reset('blur', 0, 'px')">Reset</button><br>
                 <span class="desc">Spread:</span> <input type="range" min="0" max="255" value="0" id="spread" onchange="change('spread', value + 'px')"> <button onclick="reset('spread', 0, 'px')">Reset</button><br>
-                <span class="desc">Color:</span> <input type="color" id="color" onchange="change('color', value)" style="width: 129px"> <button onclick="reset('color', '#000000')">Reset</button><br>
+                <span class="desc">Color:</span> <input type="color" id="color" onchange="change('color', value)"> <button onclick="reset('color', '#000000')">Reset</button><br>
                 <div id="additional">
                     <span class="desc">X:</span> <input type="range" min="-512" max="512" value="10" id="x2" onchange="change('x2', value + 'px')"> <button onclick="reset('x2', -10, 'px')">Reset</button><br>
                     <span class="desc">Y:</span> <input type="range" min="-512" max="512" value="10" id="y2" onchange="change('y2', value + 'px')"> <button onclick="reset('y2', -10, 'px')">Reset</button><br>
                     <span class="desc">Blur:</span> <input type="range" min="0" max="255" value="0" id="blur2" onchange="change('blur2', value + 'px')"> <button onclick="reset('blur2', 0, 'px')">Reset</button><br>
                     <span class="desc">Spread:</span> <input type="range" min="0" max="255" value="0" id="spread2" onchange="change('spread2', value + 'px')"> <button onclick="reset('spread2', 0, 'px')">Reset</button><br>
-                    <span class="desc">Color:</span> <input type="color" value="#0075ff" id="color2" onchange="change('color2', value)" style="width: 129px"> <button onclick="reset('color2', '#0075ff')">Reset</button><br>
+                    <span class="desc">Color:</span> <input type="color" value="#0075ff" id="color2" onchange="change('color2', value)"> <button onclick="reset('color2', '#0075ff')">Reset</button><br>
                 </div>
                 <button id="action-btn" onclick="shadowController()">Add shadow</button>
             </div>
